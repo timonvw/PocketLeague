@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="7dp" android:onClick="testMe">
+
+    <ImageView
+            android:id="@+id/listview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp" tools:srcCompat="@tools:sample/avatars"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+        <TextView
+                android:id="@+id/listview_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold" tools:text="@tools:sample/cities"/>
+
+        <TextView
+                android:id="@+id/listview_item_short_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:textStyle="italic" tools:text="@tools:sample/first_names"/>
+
+        <TextView
+                android:id="@+id/listview_item_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:textSize="14sp" tools:text="@tools:sample/full_names"/>
+    </LinearLayout>
+</LinearLayout>
